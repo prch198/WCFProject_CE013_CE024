@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ca24ff76-319f-4b5a-99cf-8a2b55c97ec0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/TenantFinder/HouseService/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="4208b5cf-9dee-49b0-ac2f-1ec85abc832f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/TenantFinder/HouseService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="38682c2d-dde8-4c5a-8761-9b634ab16846" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/TenantFinder/HouseService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="79c8f1d3-022e-4d69-8c0b-2d510cd1e3ec" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/TenantFinder/HouseService/mex" />
+    <MetadataFile FileName="TenantFinder.xsd" MetadataType="Schema" ID="405640d5-53f8-4d2e-a1f9-ee85da4de9c0" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/TenantFinder/HouseService/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="e36ae7bb-18dd-4084-9ce4-ccac6b76a093" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/TenantFinder/HouseService/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
