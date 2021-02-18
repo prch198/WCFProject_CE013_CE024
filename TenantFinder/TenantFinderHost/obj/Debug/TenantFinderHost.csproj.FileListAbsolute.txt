@@ -1,0 +1,11 @@
+C:\Users\Prutha\source\repos\TenantFinder\TenantFinderHost\bin\Debug\TenantFinderHost.exe.config
+C:\Users\Prutha\source\repos\TenantFinder\TenantFinderHost\bin\Debug\TenantFinderHost.exe
+C:\Users\Prutha\source\repos\TenantFinder\TenantFinderHost\bin\Debug\TenantFinderHost.pdb
+C:\Users\Prutha\source\repos\TenantFinder\TenantFinderHost\bin\Debug\TenantFinder.dll
+C:\Users\Prutha\source\repos\TenantFinder\TenantFinderHost\bin\Debug\TenantFinder.pdb
+C:\Users\Prutha\source\repos\TenantFinder\TenantFinderHost\bin\Debug\TenantFinder.dll.config
+C:\Users\Prutha\source\repos\TenantFinder\TenantFinderHost\obj\Debug\TenantFinderHost.csprojAssemblyReference.cache
+C:\Users\Prutha\source\repos\TenantFinder\TenantFinderHost\obj\Debug\TenantFinderHost.csproj.CoreCompileInputs.cache
+C:\Users\Prutha\source\repos\TenantFinder\TenantFinderHost\obj\Debug\TenantFinderHost.csproj.CopyComplete
+C:\Users\Prutha\source\repos\TenantFinder\TenantFinderHost\obj\Debug\TenantFinderHost.exe
+C:\Users\Prutha\source\repos\TenantFinder\TenantFinderHost\obj\Debug\TenantFinderHost.pdb
