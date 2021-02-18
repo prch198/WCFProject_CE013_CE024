@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="HouseService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/TenantFinder" />
+      <xsd:import />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IHouseService_GetHouse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHouse" />
+  </wsdl:message>
+  <wsdl:message name="IHouseService_GetHouse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHouseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHouseService_AddHouse_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddHouse" />
+  </wsdl:message>
+  <wsdl:message name="IHouseService_AddHouse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddHouseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHouseService_UpdateHouse_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateHouse" />
+  </wsdl:message>
+  <wsdl:message name="IHouseService_UpdateHouse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateHouseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHouseService_DeleteHouse_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteHouse" />
+  </wsdl:message>
+  <wsdl:message name="IHouseService_DeleteHouse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteHouseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHouseService_DeleteHouse_NotFoundHouseFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/TenantFinder" name="detail" element="q1:NotFoundHouse" />
+  </wsdl:message>
+  <wsdl:message name="IHouseService_GetAllHouses_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllHouses" />
+  </wsdl:message>
+  <wsdl:message name="IHouseService_GetAllHouses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllHousesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IHouseService">
+    <wsdl:operation name="GetHouse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHouseService/GetHouse" message="tns:IHouseService_GetHouse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHouseService/GetHouseResponse" message="tns:IHouseService_GetHouse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddHouse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHouseService/AddHouse" message="tns:IHouseService_AddHouse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHouseService/AddHouseResponse" message="tns:IHouseService_AddHouse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHouse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHouseService/UpdateHouse" message="tns:IHouseService_UpdateHouse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHouseService/UpdateHouseResponse" message="tns:IHouseService_UpdateHouse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHouse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHouseService/DeleteHouse" message="tns:IHouseService_DeleteHouse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHouseService/DeleteHouseResponse" message="tns:IHouseService_DeleteHouse_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IHouseService/DeleteHouseNotFoundHouseFault" name="NotFoundHouseFault" message="tns:IHouseService_DeleteHouse_NotFoundHouseFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllHouses">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHouseService/GetAllHouses" message="tns:IHouseService_GetAllHouses_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHouseService/GetAllHousesResponse" message="tns:IHouseService_GetAllHouses_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IHouseService" type="tns:IHouseService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetHouse">
+      <soap:operation soapAction="http://tempuri.org/IHouseService/GetHouse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddHouse">
+      <soap:operation soapAction="http://tempuri.org/IHouseService/AddHouse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHouse">
+      <soap:operation soapAction="http://tempuri.org/IHouseService/UpdateHouse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteHouse">
+      <soap:operation soapAction="http://tempuri.org/IHouseService/DeleteHouse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="NotFoundHouseFault">
+        <soap:fault use="literal" name="NotFoundHouseFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllHouses">
+      <soap:operation soapAction="http://tempuri.org/IHouseService/GetAllHouses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HouseService">
+    <wsdl:port name="BasicHttpBinding_IHouseService" binding="tns:BasicHttpBinding_IHouseService">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/TenantFinder/HouseService/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

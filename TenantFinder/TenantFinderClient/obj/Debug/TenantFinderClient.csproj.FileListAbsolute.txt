@@ -1,0 +1,10 @@
+C:\Users\Dell\source\repos\TenantFinder\TenantFinderClient\bin\Debug\TenantFinderClient.exe.config
+C:\Users\Dell\source\repos\TenantFinder\TenantFinderClient\bin\Debug\TenantFinderClient.exe
+C:\Users\Dell\source\repos\TenantFinder\TenantFinderClient\bin\Debug\TenantFinderClient.pdb
+C:\Users\Dell\source\repos\TenantFinder\TenantFinderClient\obj\Debug\TenantFinderClient.Form1.resources
+C:\Users\Dell\source\repos\TenantFinder\TenantFinderClient\obj\Debug\TenantFinderClient.Properties.Resources.resources
+C:\Users\Dell\source\repos\TenantFinder\TenantFinderClient\obj\Debug\TenantFinderClient.csproj.GenerateResource.cache
+C:\Users\Dell\source\repos\TenantFinder\TenantFinderClient\obj\Debug\TenantFinderClient.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\TenantFinder\TenantFinderClient\obj\Debug\TenantFinderClient.exe
+C:\Users\Dell\source\repos\TenantFinder\TenantFinderClient\obj\Debug\TenantFinderClient.pdb
+C:\Users\Dell\source\repos\TenantFinder\TenantFinderClient\obj\Debug\TenantFinderClient.csprojAssemblyReference.cache
